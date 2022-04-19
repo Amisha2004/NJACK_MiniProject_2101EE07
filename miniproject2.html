@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="C:\Users\hp\Desktop\webdevcss\stylees.css">
+</head>
+<body style="text-align: center;"><!--this line is for the text to be at center-->
+       <div class="container">
+       <h1>COUNTER</h1><!--heading-->
+       <button type="button" onclick="document.getElementById('counter').innerHTML=count=0">
+         Reset</button><!--reset button to resent the counter to 0-->
+         <h2 id="counter"></h2>
+       <button type="button" onclick="increment()">Increase</button><!--for increment-->
+       <button type="button" onclick="decrement()">Decrease</button><!--for decrement-->
+       </div>
+    <script>
+       var count=0;//intializing the value of count to be 0
+       document.getElementById("counter").innerText=count;
+       function increment(){       //this is a function for increasing the count by 1.
+          count=count+1;
+          if(count<0){
+             alert("Error"); // if the value of count is negative then the page says error.
+          }
+        document.getElementById("counter").innerText=count;
+       }
+       function decrement(){       //this is a function for decreasing the count by 1.
+          count=count-1;
+          if(count<0){
+             alert("Error"); // if the value of count is negative then the page says error.
+          }
+        document.getElementById("counter").innerText=count;
+       }
+    </script>
+</body>
+</html>
