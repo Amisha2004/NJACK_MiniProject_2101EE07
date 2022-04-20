@@ -19,6 +19,7 @@
        function increment(){       //this is a function for increasing the count by 1.
           count=count+1;
           if(count<0){
+              count++;
              alert("Error"); // if the value of count is negative then the page says error.
           }
         document.getElementById("counter").innerText=count;
@@ -26,6 +27,7 @@
        function decrement(){       //this is a function for decreasing the count by 1.
           count=count-1;
           if(count<0){
+                 count++;
              alert("Error"); // if the value of count is negative then the page says error.
           }
         document.getElementById("counter").innerText=count;
